@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
   sortTable(prop: string) {
     this.path = prop.split('.')
     this.order = this.order * (-1); // change order
-    return false;
+    return false; // do not reload
   }
 
 }
